@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ESTOQUE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<main>
+    <div class="registration-form">
+
+    <form name="TB_Kits" action="Finaflor.php" method="get" >
+
+        <div class="form-icon">
+            <span><i class="icon icon-menu"></i></span>
+        </div>
+
+     <div class="form-group">
+        <h1 class="top">ESTOQUE - FINAFLOR</h1>
+        <input type="text" class="form-control item" name="Produto" placeholder="Produto"> 
+     </div>
+  
+     <div class="form-group">
+        <label>Fabricação</label>
+        <input type="date" class="form-control item" name="Fabricacao">
+     </div>
+
+     <div class="form-group">
+         <label>Validade</label>
+        <input type="date" class="form-control item" name="Validade">
+     </div>
+
+     <div class="form-group">
+        <input type="number" class="form-control item" name="Preco" placeholder="Preço">
+     </div>
+
+     <div class="form-group text-center">
+        <input type="submit" class="btn btn-primary" name="Botao" value="Gravar">
+        <input type="submit" class="btn btn-primary" name="Botao" value="Consultar">
+        <input type="submit" class="btn btn-primary" name="Botao" value="Excluir">
+        <input type="submit" class="btn btn-primary" name="Botao" value="Alterar">
+        <input type="reset" class="btn btn-primary" name="Botao"  value="Limpar">
+    </div>
+    </form>
+    <div class="social-media center-block"></div>
+</main>
+</html>

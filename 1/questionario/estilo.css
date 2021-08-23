@@ -1,0 +1,19 @@
+body {
+    background-color:yellow;
+    color:black;
+    text-align: justify;
+    margin-top: 13px;
+    line-height:50px;
+    font-family: 'Arial', Courier, monospace
+
+}
+
+h1 {
+    text-align: center; 
+    
+}
+
+#botao{ 
+    text-align: center;
+}
+

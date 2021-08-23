@@ -1,0 +1,111 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>QUESTIONÁRIO</title>
+</head>
+<body onload="tempo()">
+    <form name=fo>
+        <h1>EGITO ANTIGO</h1>
+        NOME: <input type=text name=txtnome> <br>
+        Tempo ocorrido: <input type=text name=txttempo> <br>
+        1)Qual o nome do rio que banha o Egito? <br>
+        <input type=radio name=p1 value="a"> Tigre <br>
+        <input type=radio name=p1 value="b"> Níger <br>
+        <input type=radio name=p1 value="c"> Nilo <br>
+        <input type=radio name=p1 value="d"> Zambeze <br>
+        2)Qual a funcionalidade das pirâmides? <br>
+        <input type=radio name=p2 value="a"> Enterrar os faraós <br>
+        <input type=radio name=p2 value="b"> Guardar comida <br>
+        <input type=radio name=p2 value="c"> Para batizar as crianças <br>
+        <input type=radio name=p2 value="d"> Salão de festas <br>
+        3)Para que servia o shaduf? <br>
+        <input type=radio name=p3 value="a"> Para pescar <br>
+        <input type=radio name=p3 value="b"> Tomar banho <br>
+        <input type=radio name=p3 value="c"> Para tirar água do rio <br>
+        <input type=radio name=p3 value="d"> Para nadar <br>
+       4)Por que os egípicios mumificavam os corpos? <br>
+       <input type=radio name=p4 value="a"> Pois eram higiênicos <br>
+       <input type=radio name=p4 value="b"> Para se purificar <br>
+       <input type=radio name=p4 value="c"> Para não feder <br>
+       <input type=radio name=p4 value="d"> Acreditavam na vida após a morte <br>
+       5)Quais são os nomes das principais pirâmides do Egito? <br>
+       <input type=radio name=p5 value="a"> Djoser, Tireis e Seneferu <br>
+       <input type=radio name=p5 value="b"> Sefrés, Quéops e Unas <br>
+       <input type=radio name=p5 value="c"> Teti, Peti e Nilo <br>
+       <input type=radio name=p5 value="d"> Quéops, Quéfren, e Miquerinos <br>
+
+       <form>
+        <div id="botao">
+            <input type=button name=botao value="Enviar" onclick="enviar()">
+        </div>
+     </form>
+
+ <script>
+var contacertos=0;
+contatempo=0;
+nome=0;
+
+function enviar()
+{
+if (fo.p1.value=="c")
+{
+contacertos++;
+
+}
+
+if(fo.p2.value=="a")
+{
+contacertos++;
+
+}
+
+if(fo.p3.value=="c")
+{
+contacertos++;
+
+}
+
+if(fo.p4.value=="d")
+{
+contacertos++;
+
+}
+
+if(fo.p5.value=="d")
+{
+contacertos++;
+
+}
+
+document.write((fo.txtnome.value)+ "<br>");
+document.write("Total de Acertos: "+contacertos+ "<br>");
+document.write("Total de Erros: "+ (5-contacertos)+ "<br>");
+document.write("GABARITO DAS QUESTÕES <br>");
+document.write("1)Resposta C <br>");
+document.write("2)Resposta A <br>");
+document.write("3)Resposta C <br>");
+document.write("4)Resposta D <br>");
+document.write("5)Resposta D <br>");
+
+}
+
+function tempo()
+{
+if(contatempo>3000)
+{
+    alert("Tempo Esgotado");
+    open(location,'_self').close(); 
+}
+else
+{
+contatempo++;
+fo.txttempo.value=contatempo;
+setTimeout("tempo()",1000);
+
+}
+
+}
+
+</script>
+</body>
+</html>

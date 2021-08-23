@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:700,800&display=swap');
+body {
+  background:rgb(221, 220, 220);
+}
+.container {
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+  padding: 80px;
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  
+}
+h1{
+  text-align: center; 
+  font-family: 'Dosis', sans-serif;
+  font-size: 20pt;
+  font-weight: 500;
+  color: black;
+
+}
+input {
+  margin: 10px;
+  -webkit-appearance: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14pt;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 3pt;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 4px solid;
+  border-radius: 45px;
+  outline: none;
+
+}
+input:focus {
+  transform: scale(1.1);
+  border-color: blue;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+select {
+  margin: 10px;
+  -webkit-appearance: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14pt;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 3pt;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 4px solid;
+  border-radius: 45px;
+  outline: none;
+  cursor: pointer;
+
+  /* Animação */
+}
+select:hover {
+  background-size: 100em;
+  background-image: linear-gradient(
+		to left,
+		rgb(5, 226, 123),
+    rgb(0, 196, 245),
+    rgb(25, 110, 206),
+		rgb(0, 60, 255));
+	animation: sliding 25s linear infinite;
+}
+@keyframes sliding {
+	to {
+		background-position: 2500em;
+	}
+}
+select:active {
+  transform: scale(1.1);
+}
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: blue;
+  transform: scale(1.1);
+}

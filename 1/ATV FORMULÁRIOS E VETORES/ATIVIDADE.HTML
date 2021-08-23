@@ -1,0 +1,80 @@
+<html>
+   <script  src="rotina.js"></script>
+<style>
+#fx {
+   position: absolute;
+   left: 6px;
+   top: 100px;
+   
+    width: 200px;
+    height: 50px;
+    background-color: green;
+display:none;
+}
+
+#jx {
+   position: absolute;
+   left: 6px;
+   top: 100px;
+   
+    width: 300px;
+    height: 50px;
+    background-color: green;
+display:none;
+}
+</style>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<body>
+<input type="hidden" name="hiddenField5" id="hiddenField5">
+
+<input type="hidden" name="hiddenField4" id="hiddenField4">
+<input type="hidden" name="hiddenField" id="hiddenField">
+<form name=foap>
+</form>
+<form name=fo>
+  <p>&nbsp;</p>
+  <p>Nome
+    <input type=text name=txtnome>
+    Data de Nascimento/Data Criação da Empresa
+    <input oninput="verificar(this, 'data')" id="campo3" type="text" class="form-control" placeholder="dd/mm/aaaa" autocomplete="off" name="txtdata">
+    <br>
+    Pessoa: 
+    <select name=opcao onclick="ver()">
+      <option value="fisica">Física</option>
+      <option value="juridica">Jurídica</option>
+    </select>
+    
+  </p>
+  <div id=fx>
+    cpf
+  <input oninput="verificar(this, 'cpf')" id="campo4" type="text" class="form-control" placeholder="xxx.xxx.xxx-xx" autocomplete="off" name="txtcpf">
+</div>
+<br>
+<div id=jx>
+cnpj
+<input oninput="verificar(this, 'cnpj')" id="campo5" type="text" class="form-control" placeholder="xx.xxx.xxx/xxxx-xx" autocomplete="off" name="txtcnpj">
+</div>
+<br>
+<br>
+<br>
+<br>
+Cep
+<input oninput="verificar(this, 'cep')" id="campo6" type="text" class="form-control" placeholder="xxxxx-xxx" autocomplete="off" name="txtcep">
+<br>
+Telefone
+<input oninput="verificar(this, 'tel')" id="campo7" type="text" class="form-control" placeholder="xxxxx-xxxx" autocomplete="off" name="txttel">
+
+</form>
+<form name=flista>
+<input type="hidden" name="hiddenField3" id="hiddenField3">
+<textarea name=lista readonly="readonly"></textarea>
+<input type="hidden" name="hiddenField2" id="hiddenField2">
+</form>
+<span style=""><span style="text-align: left">
+
+<input type=button value="Cadastrar" onClick="mostracad()">
+<input type=button value="Listar" onClick="mostralista()">
+</span>
+</span>
+</body>
+</html>

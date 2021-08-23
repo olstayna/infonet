@@ -1,0 +1,36 @@
+<html>
+<head>
+
+</head>
+<script  src="rotinas.js"></script> 
+<body>
+<form name=fo>
+	cpf:
+	<input type=text name=cpf>
+	<input type =button value="pesquisar" onclick="verificar()">
+</form>
+
+<script>
+	function verificar()
+	{
+		if(Testarcpf(fo.cpf.value)==true)
+		{
+           alert("cpf valido");
+
+		}
+
+		else
+		{
+           alert("cpf invalido");
+
+		}
+
+
+	}
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+<head>
+<body>
+	DADOS DO CLIENTES
+<BR>
+<form name=fo>
+	nome: <input type = text name=txtnome> <br>
+	endereco: <input type = text name=txtender> <br>
+	rg: <input type = text name=txtrg> <br>
+	<input type=button name=bt onclick="cadastro()" value="cadastrar">
+	<input type=button name=bt2 onclick="listar()" value="listar">
+
+	<textarea name=imp></textarea>
+</form>
+
+<script>
+	//guardar até 100 clientes
+	var nome=new Array(100);
+	    endereco=new Array(100);
+	    rg=new Array(100);
+	    i=0;
+	    erro=0;
+	    p=0;
+	    texto="";
+	    function cadastro()
+
+	    {
+
+	    	 if (i>99)
+         {
+			alert("esgotado");
+			}
+else
+{ 
+     erro=0;
+	for(p=0;p!=i;p++)
+
+	{
+      if(rg[p]==fo.txtrg.value)
+      {
+       erro=1;
+
+      }
+
+	}
+
+	if(erro==0)
+	{
+         nome[i]=fo.txtnome.value;
+         endereco[i]=fo.txtender.value;
+         rg[i]=fo.txtrg.value;
+         alert("CADASTRO OK");
+         fo.txtnome.value="";
+          fo.txtender.value="";
+           fo.txtrg.value="";
+         i++;
+
+}
+else
+{
+	 alert("RG JA EXISTENTE");
+}
+         }
+     }
+
+function listar()
+{var j=0;
+texto="";
+//for(j=0;j!=i;j++)
+while(j!=i)
+{
+texto=texto+nome[j]+ "   "+ endereco[j]+ "  "+ "  "+rg[j]+ "\n";
+j++;
+}
+fo.imp.value=texto;
+
+}
+</script>
+	
+</body>
+</html>

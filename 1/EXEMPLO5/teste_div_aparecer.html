@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+#divr {
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<img src=foto1.jpg width=200 heigth=200 id=foto onmouseover="aparecer()" 
+onmouseout="desaparecer()">
+
+<div id="divr" onmouseover="aparecer()" onmouseout="desaparecer()">
+conteudo da div
+<input type=text name=txtcod>
+</div>
+
+	<script>
+function aparecer()
+{
+document.getElementById("divr").style.display = "block";  // aparece 
+
+}
+
+function desaparecer()
+{
+document.getElementById("divr").style.display = "none";  // desaparece 
+
+}
+
+
+	</script>
+
+
+
+</body>
+</html>

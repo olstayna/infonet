@@ -1,0 +1,23 @@
+<html>
+<head>
+<body>
+	<p id="p1"> click no botão para saber o conteudo</p>
+
+	<form name=fo>
+		nome:
+		<input name=txtnome type=text><br>
+		<input type=button name=bt value= "verificar" onclick="mostrar()">
+	</form>
+<script>
+
+	function mostrar()
+	{
+ document.getElementById("p1").innerHTML="Ola "+ fo.txtnome.value + " você foi premiado";
+
+
+	}
+</script>
+
+	
+</body>
+</html>

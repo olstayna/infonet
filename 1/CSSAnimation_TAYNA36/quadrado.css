@@ -1,0 +1,32 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:gainsboro;
+}
+
+.quadrado {
+  margin-left:0px; 
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: color_change 5s infinite;
+}
+
+@keyframes color_change {
+	0%  {background-color:green; margin-left: 5px;}
+	100%  {background-color:red;margin-left: 400px;}
+}
+

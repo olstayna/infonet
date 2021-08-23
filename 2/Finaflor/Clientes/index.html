@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CADASTRE-SE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<main>
+    <div class="registration-form">
+            <form name="TB_Clientes" action="Clientes.php" method="get">
+
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" name="Nome" placeholder="Nome completo" required>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control item" name="CPF" placeholder="CPF" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" name="Email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control item" name="Telefone" placeholder="Telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" name="Endereco" placeholder="Endereço" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" name="Senha" placeholder="Senha" maxlength="8" required>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" class="btn btn-primary btn-lg" name="Botao" value="Cadastrar">
+                <input type="reset" class="btn btn-primary btn-lg" name="Botao" value="Limpar">
+            </div>
+        </form>
+        <div class="social-media center-block">
+        <a href ="Pedidos/index.html"> <h5> Prossiga após o cadastro </h5> </a>
+        </div>
+    </div>
+</main>
+</html>
